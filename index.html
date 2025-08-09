@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Climate Index</title>
+</head>
+<body>
+  <h1>Climate Index</h1>
+  <p>Temperature: <span id="temp">--</span> °C</p>
+  <p>Humidity: <span id="humidity">--</span> %</p>
+  <p>Precipitation: <span id="precip">--</span> mm</p>
+  <p>AQI: <span id="aqi">--</span></p>
+  <script>
+    // Demo data
+    const data = {
+      temp: 28,
+      humidity: 55,
+      precip: 2,
+      aqi: 80
+    };
+    // Show data
+    document.getElementById("temp").textContent = data.temp;
+    document.getElementById("humidity").textContent = data.humidity;
+    document.getElementById("precip").textContent = data.precip;
+    document.getElementById("aqi").textContent = data.aqi;
+  </script>
+</body>
+</html>
